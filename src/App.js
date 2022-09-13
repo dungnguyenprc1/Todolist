@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './App.less';
+import { Divider  } from 'antd';
+import React from 'react';
+import Filter from './components/Filter'
+import TodoList from './components/Filter/TodoList'
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Todo List</h1>
+      <Filter/>
+      <Divider />
+      <TodoList/>
     </div>
   );
 }
